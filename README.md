@@ -1,2 +1,2 @@
 # Everlight
-Thanksgiving game for the family play while home. 
+Thanksgiving game for the family to play at home. 
