@@ -1,10 +1,10 @@
 # The Five Days of Everlight — Multiplayer Family Web App
 
-A deployable Next.js application with a private Dungeon Master dashboard, two QR-invited player portals, persistent character sheets, campaign chapters, hidden clues, shared dice events, quest rewards, and basic combat tracking.
+A deployable Next.js application with a private Dungeon Master dashboard, four numbered QR-invited player portals, persistent character sheets, campaign chapters, hidden clues, shared dice events, quest rewards, and basic combat tracking.
 
 ## What works
 
-- DM password login and separate Q/Harmony player sessions, signed in HTTP-only cookies
+- DM password login and separate player sessions by number, signed in HTTP-only cookies
 - QR invitations for phone browsers (once deployed to a public HTTPS URL)
 - Character creation (name, class, origin, trait), health, gold, inventory
 - Five chapters (Nov 23–27, 2026), household missions and scripted mysteries
@@ -19,7 +19,7 @@ A deployable Next.js application with a private Dungeon Master dashboard, two QR
 2. In Supabase project settings, copy **Project URL** and **service_role** secret key. **Never put the service_role key in a NEXT_PUBLIC variable or expose it to the browser.**
 3. Create a new Git repository and push this folder. Import it into Vercel at https://vercel.com/new . Framework: Next.js.
 4. Set environment variables in Vercel (see `.env.example`): `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `DM_PASSWORD`, `SESSION_SECRET` (32+ random characters), and `NEXT_PUBLIC_APP_URL` (your actual deployed HTTPS origin). Redeploy after saving.
-5. Open your Vercel URL, select **Dungeon Master**, enter the DM password. Under **Invites**, scan Q and Harmony's QR codes using their phones. They select their player slot and create their characters.
+5. Open your Vercel URL, select **Dungeon Master**, enter the DM password. Under **Invites**, scan each numbered player's QR codes using their phones. They select their player slot and create their characters.
 6. On Nov 23, go to **Adventure** and select Day 1 to launch the opening narration. Use **Clues** to send evidence and **Players** to award items.
 
 ### Local testing
